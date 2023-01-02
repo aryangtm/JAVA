@@ -1,24 +1,21 @@
-
-import java.util.Arrays;
-import java.util.Scanner;
-
-class X{
+import java.util.*;
+class x{
     public static void main(String[] args) {
         Scanner i = new Scanner(System.in);
-        int n = i.nextInt();
-        int[] arr = new int[n+1];
-        System.out.println("Enter index you want to delete element in : ");
+        System.out.print("Enter the Size of Array : ");
+        int x = i.nextInt();
+        int[] a = new int[x+1];
+        System.out.print("Enter the index : ");
         int idx = i.nextInt();
-        for (int j = 0; j < n; j++) {
-            arr[j] = i.nextInt();
+        for (int j = 0; j < x; j++) {
+            a[j]=i.nextInt();
         }
-        for (int k = idx; k <n-1 ; k++) {
-            arr[k] = arr[k+1];
+        for (int j = idx; j < x-1 ; j++) {
+            a[j] = a[j+1];
         }
-        for (int l = 0; l < n-1; l++) {
-            System.out.println(arr[l]);
+        x=x-1;
+        for (int j = 0; j < x ; j++) {
+            System.out.print(a[j]+" ");
         }
-
     }
-
 }
