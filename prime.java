@@ -3,8 +3,8 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Scanner i = new Scanner(System.in);
-        int a = i.nextInt();
+        Scanner k = new Scanner(System.in);
+        int a = k.nextInt();
         Prime(a);
     }
     static void Prime(int a)
