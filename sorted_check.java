@@ -1,11 +1,11 @@
 import java.util.*;
 class X{
     public static void main(String[] args) {
-        Scanner i  = new Scanner(System.in);
-        int x = i.nextInt();
+        Scanner z  = new Scanner(System.in);
+        int x = z.nextInt();
         int[] a = new int[x];
         for (int j = 0; j < x ; j++) {
-            a[j] = i.nextInt();
+            a[j] = z.nextInt();
         }
         int flag = 0;
         for (int k = 1; k < x ; k++) {
