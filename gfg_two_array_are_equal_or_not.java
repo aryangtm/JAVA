@@ -4,8 +4,8 @@ class Solution{
     {
         Arrays.sort(A);
         Arrays.sort(B);
-        for(int i = 0;i<N;i++){
-            if(A[i]!=B[i]){
+        for(int k = 0;k<N;k++){
+            if(A[k]!=B[k]){
                 return false;
             }
         }
