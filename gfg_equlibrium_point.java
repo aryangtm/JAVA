@@ -17,6 +17,6 @@ class Solution {
                 s2=s2+a[i];
             }
         }
-        return -1;
+        return 0;
     }
 }
