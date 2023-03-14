@@ -1,7 +1,7 @@
 class Solution {
     public static ArrayList<Integer> Solve(int x, int[] a) {
         ArrayList<Integer> al = new ArrayList<>();
-        int  c=0;
+        int  c=00;
         int ch = x/3;
         for (int j = 0; j < x; j++) {
             c=0;
