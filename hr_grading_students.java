@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 class Solution{
     public static void main(String[] args) {
-        Scanner i = new Scanner(System.in);
-        int t = i.nextInt();
+        Scanner  r = new Scanner(System.in);
+        int t = r.nextInt();
         int[] a =  new int[t];
         for (int j = 0; j < t; j++) {
-            a[j] = i.nextInt();
+            a[j] = r.nextInt();
 
 
             if(a[j]%5!=0){
