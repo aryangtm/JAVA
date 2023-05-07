@@ -63,5 +63,4 @@ public class Solution {
         return head;
 
     }
-
     private static final Scanner scanner = new Scanner(System.in);
