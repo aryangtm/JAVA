@@ -40,17 +40,6 @@ public class Solution {
         }
     }
 
-    // Complete the insertNodeAtTail function below.
-
-    /*
-     * For your reference:
-     *
-     * SinglyLinkedListNode {
-     *     int data;
-     *     SinglyLinkedListNode next;
-     * }
-     *
-     */
     static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
         SinglyLinkedListNode n = new SinglyLinkedListNode(data);
         if(head==null)
