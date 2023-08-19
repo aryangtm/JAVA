@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Cf_watermelon {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int t = s.nextInt();
+        if (t % 2 == 0&& t>=4) {
+            System.out.print("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
