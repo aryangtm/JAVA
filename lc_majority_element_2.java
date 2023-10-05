@@ -1,22 +1,16 @@
 class Solution {
-    public List<Integer> majorityElement(int[] a) {
-        List<Integer> al = new ArrayList<>();
-        int  c=0;
-        int x = a.length;
-        int ch = x/3;
-        for (int j = 0; j < x; j++) {
-            c=0;
-            for (int k = j+1; k < x ; k++) {
-                if(a[j]==a[k]){
-                    c++;
-                }
+    public List<Integer> majorityElement(int[] nums) {
+        int checker = (int)(nums.length/3)+1;
+        List<Integer> ans= new LinkedList<Integer>();
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        for(int i= 0;i<nums.length;i++){
+            int value = map.getOrDefault(nums[i],0);
+            map.put(nums[i],value+1);
+            if(map.get(nums[i])==checker){
+                ans.add(nums[i]);
             }
-            if(c>=x/3){
-                if(!al.contains(a[j])){
-                    al.add(a[j]);
-                }
-            }
+            //if(ans.size()==checker)break;
         }
-        return al;
+        return ans;
     }
 }
